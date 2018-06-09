@@ -5,6 +5,7 @@
     <title>Busy Bus</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="topbar">
@@ -13,9 +14,10 @@
         <h2 class="backbutton">Locations</h2>
         <h2 class="pagename">Bus Stop</h2>
         <div class="searchbar">
-          <img class="searchicon" src="images/search.png" alt="">
-          Search
-          <img class="dictation" src="images/dictation.png" alt="">
+            <div class="icon"><i class="fa fa-search"></i></div>
+            <div class="dictation"><i class="fa fa-microphone"></i></div>
+
+            <input type="search" id="search" placeholder="Search"/>
         </div>
     </header>
 
@@ -33,20 +35,28 @@
           <div class="numberbox">
           <h3 class="numbers">60</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">Randolph/Harbor Dr</h3>
-          <h3 class="times">Every 20 min</h3>
+          <h4 class="frequency">Every 20 min</h4>
+        </div>
+          <h3 class="times">2 min</h3>
           <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
+
         <li>
           <div class="numberbox">
           <h3 class="numbers">124</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">Navy Pier</h3>
-          <h3 class="times">Every 10 min</h3>
+          <h4 class="frequency">Every 10 min</h4>
+        </div>
+          <h3 class="times">5 min</h3>
           <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
+
 
         <h2>Northbound</h2>
 
@@ -54,8 +64,11 @@
           <div class="numberbox">
           <h3 class="numbers">151</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">Devon/Clark</h3>
-          <h3 class="times">Every 16 min</h3>
+          <h4 class="frequency">Every 16 min</h4>
+        </div>
+          <h3 class="times">8 min</h3>
           <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
@@ -66,17 +79,24 @@
           <div class="numberbox">
           <h3 class="numbers">J14</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">103rd/Stony Island</h3>
-          <h3 class="times">Every 15 min</h3>
+          <h4 class="frequency">Every 15 min</h4>
+        </div>
+          <h3 class="times">10 min</h3>
           <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
+
         <li>
           <div class="numberbox">
           <h3 class="numbers">124</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">Navy Pier</h3>
-          <h3 class="times">Every 10 min</h3>
+          <h4 class="frequency">Every 10 min</h4>
+        </div>
+          <h3 class="times">15 min</h3>
           <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
@@ -87,8 +107,11 @@
           <div class="numberbox">
           <h3 class="numbers">6x</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">Jackson Park Express</h3>
-          <h3 class="times resumes">N/A</h3>
+          <h4 class="frequency">N/A</h4>
+        </div>
+          <h3 class="times resumes"> </h3>
           <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
@@ -99,27 +122,38 @@
           <div class="numberbox">
           <h3 class="numbers">4</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">Cottage Grove</h3>
-          <h3 class="times resumes">Resumes 12:10 am</h3>
-          <img class="arrowresumes" src="images/arrowright.png" alt="">
+          <h4 class="frequency">Resumes 12:10 am</h4>
+        </div>
+          <h3 class="times resumes"> </h3>
+          <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
+
         <li>
           <div class="numberbox">
           <h3 class="numbers">20</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">Madison</h3>
-          <h3 class="times resumes">Resumes 12:10 am</h3>
-          <img class="arrowresumes" src="images/arrowright.png" alt="">
+          <h4 class="frequency">Resumes 12:10 am</h4>
+        </div>
+          <h3 class="times resumes"> </h3>
+          <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
+
         <li>
           <div class="numberbox">
           <h3 class="numbers">157</h3>
           </div>
+        <div class="routeinfo">
           <h3 class="locations">Streeterville/Taylor</h3>
-          <h3 class="times resumes">Resumes 6:00 am</h3>
-          <img class="arrowresumes" src="images/arrowright.png" alt="">
+          <h4 class="frequency">Resumes 6:00 am</h4>
+        </div>
+          <h3 class="times resumes"> </h3>
+          <img class="arrow" src="images/arrowright.png" alt="">
           <hr>
         </li>
       </ul>

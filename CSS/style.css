@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   width: 375px;
   background-color: #000000;
-  font-family: "SF Pro Display";
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
 .topbar {
@@ -14,7 +14,7 @@ body {
   height: 116px;
 }
 
-.backbutton, .pagename, .toparrow, .arrow, .locations, .locationsresumes, .times, .busicon, .numbers, .arrow {
+.backbutton, .pagename, .toparrow, .arrow, .locations, .locationsresumes, .times, .frequency, .busicon, .numbers, .arrow {
   float: left;
 }
 
@@ -26,8 +26,8 @@ body {
 
 .toparrow {
   padding: 8px 0 0 4%;
-
 }
+
 .pagename {
   padding-top: 10px;
   color: white;
@@ -37,21 +37,42 @@ body {
 .searchbar {
   width: 343px;
   height: 32px;
-  background-color: #ffffff;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.searchbar input#search {
+  width: 343px;
+  height: 32px;
+  background: #ffffff;
+  border: none;
+  font-size: 12pt;
+  float: left;
+  color: #8E8E93;
+  padding-left: 35px;
+  padding-right: 35px;
   border-radius: 10px;
-  margin: 48px 16px 0 16px;
-  padding: 6px 0 0 10px;
+  margin: 13px 16px 0 16px;
+  outline : none;
+}
+
+.icon {
+  position:  absolute;
+  top: 130%;
+  margin-left: 30px;
+  margin-top: 17px;
+  z-index: 1;
   color: #8E8E93;
 }
 
-.searchicon {
-  padding-right: 5px;
-  padding-top: 2px;
-}
-
 .dictation {
-  float: right;
-  padding-right: 10px;
+  position:  absolute;
+  top: 130%;
+  margin-left: 335px;
+  margin-top: 18px;
+  z-index: 1;
+  color: #8E8E93;
 }
 
 .container {
@@ -73,12 +94,10 @@ body {
   border-width: 1px;
   border-style: solid;
   /* Background: */
-
-box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.05);
-
+  box-shadow: 0 -2px 3px 0 rgba(0,0,0,0.05);
 }
 
-.schedule ul li, hr {
+.schedule ul li, hr  {
   clear: both;
 }
 
@@ -100,46 +119,46 @@ hr {
   padding: 10px 10px 20px 20px;
 }
 
-
 .numberbox {
   width: 12%;
 }
 
 .numbers {
   background-color: rgb(1, 174, 191);
-  margin: 5px 0px 0px 15px;
+  margin: 4px 0px 0px 15px;
   padding: 14px 0px 10px 0px;
   color: white;
   width: 42px;
   height: 42px;
   text-align: center;
   border-radius: 5px;
-
 }
 
 .locations {
-  margin: 4% 0 4% 4%;
-  width:45%;
+  margin: 1.5% 0 0 4%;
+  width: 65%;
 }
 
+.frequency {
+  width: 58%;
+  margin: 3% 0 4% 4%;
+}
 
 .times {
-  padding: 15px 0px 15px 0px;
-  width: 25%;
+  margin: 1% 3% 4% 0%;
+  width: 14%;
+  text-align: right;
 }
 
 .arrow {
-  padding: 15px 0 0 4%;
-}
-
-.arrowresumes {
-  padding: 20px 0 0 4%;
+  padding: 1.5% 0 0 0%;
 }
 
 .resumes {
   font-style: italic;
   color: #9B9B9B;
 }
+
 h1 {
   font-size: 1.2em;
   font-weight: 600;
@@ -152,24 +171,10 @@ h2 {
   font-weight: 600;
 }
 
-
-
-
-/**
-.map {
-  background-image: url("../images/madrid.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+h4 {
+  font-style: italic;
+  font-weight: 400;
+  color: #9B9B9B;
+  line-height: 4px;
+  padding-bottom: 1%;
 }
-
-
-.container > h1 {
-  padding: 35px 0px 10px 0px;
-  font-family: Helvetica;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.2em;
-  margin-bottom:20px;
-  }
